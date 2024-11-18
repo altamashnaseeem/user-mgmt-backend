@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Compile to modern JavaScript
+    "module": "CommonJS", // Node.js uses CommonJS
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Support CommonJS imports
+    "outDir": "./dist", // Directory for compiled JavaScript files
+    "resolveJsonModule": true // Allow importing JSON files
+  },
+  "include": ["*.ts"], // Include all TypeScript files in the root directory
+  "exclude": ["node_modules"] // Exclude the node_modules folder
+}
