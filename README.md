@@ -1,4 +1,5 @@
                                                   ------------instruction to run code into machine----------------
+                                                  
 1-clone this repo into your vs code.
 2-run command npm install in root directory
 3-create firebase project after that go to project setting>>service accounts then generate private key.
@@ -6,7 +7,8 @@
 5-dist folder automatically generated when you run the command tsc.
 6-run command npm start.
 
-                                                  ---------------DATABASE STRUCTURE--------------------------------
+                                                       ---------------DATABASE STRUCTURE--------------------------------
+                                                          
 1. users Collection
 Each document represents a user. The document ID is the user's unique identifier.
 
@@ -25,6 +27,7 @@ content (String): The content of the note.
 createdAt (Timestamp): The timestamp when the note was created.
 
                                               -------------Example requests for each API using Postman----------------
+                                              
 
 1. Register User
 Endpoint:POST http://localhost:3000/api/users/register
@@ -47,10 +50,12 @@ Request Body:
   "email":"altamash01@gmail.com"
 }
 ####################################################################
+
 5. Delete User
 Endpoint:DELETE http://localhost:3000/api/users/:userId
 
 ####################################################################
+
 1. Save Note
 Endpoint:POST http://localhost:3000/api/notes/save
 
@@ -62,6 +67,7 @@ Request Body:
 }
 
 #######################################################################
+
 2. Get Note
 Endpoint:Get http://localhost:3000/api/notes/:userId
 
